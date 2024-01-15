@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:backgroundTint="@color/background_support"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_item_new_asset_coin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_support"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/iv_fragment_new_asset_buy_value_back"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_arrow"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tv_item_new_asset_coin_name"
+            style="@style/Title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_item_new_asset_coin_symbol"
+            style="@style/Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="BTC"
+            android:textColor="@color/white50"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_new_asset_coin_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_new_asset_coin_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_new_asset_coin_name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

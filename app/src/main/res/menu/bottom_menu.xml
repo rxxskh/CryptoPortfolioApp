@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/portfolioFragment"
+        android:icon="@drawable/ic_portfolio"
+        android:title="Портфолио" />
+
+    <item
+        android:id="@+id/newAssetCoinFragment"
+        android:icon="@drawable/ic_new_asset"
+        android:title="Добавить" />
+
+    <item
+        android:id="@+id/rankingFragment"
+        android:icon="@drawable/ic_ranking"
+        android:title="Курс" />
+</menu>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:backgroundTint="@color/background_support"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_support">
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_subtitle0"
+            style="@style/Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Всего"
+            android:textColor="@color/white50"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_portfolio_asset_symbol"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_portfolio_asset_subtitle2"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_portfolio_asset_symbol" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_difference_good"
+            style="@style/Caption1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="$10,000.01"
+            android:textColor="@color/green_light"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_portfolio_asset_subtitle3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_portfolio_asset_subtitle3" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_difference_bad"
+            style="@style/Caption1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="$10,000.01"
+            android:textColor="@color/red_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_portfolio_asset_subtitle3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_portfolio_asset_subtitle3" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_position"
+            style="@style/Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="200"
+            android:textAlignment="center"
+            android:textColor="@color/white70"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_symbol"
+            style="@style/Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/inter"
+            android:text="BTC"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_portfolio_asset_position"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_portfolio_asset_position"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_portfolio_asset_position" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_invested_price"
+            style="@style/Caption1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="$20,949.56"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_portfolio_asset_subtitle1" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_current_price"
+            style="@style/Caption1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="$30,949.56"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_portfolio_asset_subtitle2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_portfolio_asset_subtitle2" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_subtitle1"
+            style="@style/Caption2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Вложено"
+            android:textColor="@color/white50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_portfolio_asset_symbol" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_subtitle2"
+            style="@style/Caption2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Получено"
+            android:textColor="@color/white50"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_portfolio_asset_subtitle1"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_portfolio_asset_subtitle1" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_subtitle3"
+            style="@style/Caption2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="P/L"
+            android:textColor="@color/white50"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_portfolio_asset_subtitle2"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_portfolio_asset_subtitle2" />
+
+        <TextView
+            android:id="@+id/tv_item_portfolio_asset_value"
+            style="@style/Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0.0001"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item_portfolio_asset_subtitle0"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_portfolio_asset_subtitle0"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_portfolio_asset_subtitle0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

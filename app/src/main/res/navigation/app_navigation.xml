@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/portfolioFragment">
+
+    <fragment
+        android:id="@+id/newAssetCoinFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.new_asset.NewAssetCoinFragment"
+        android:label="fragment_new_asset"
+        tools:layout="@layout/fragment_new_asset_coin">
+        <action
+            android:id="@+id/action_newAssetCoinFragment_to_newAssetBuyValueFragment"
+            app:destination="@id/newAssetBuyValueFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/portfolioFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.portfolio.PortfolioFragment"
+        android:label="fragment_portfolio"
+        tools:layout="@layout/fragment_portfolio">
+        <action
+            android:id="@+id/action_portfolioFragment_to_investDialogFragment"
+            app:destination="@id/investDialogFragment" />
+        <action
+            android:id="@+id/action_portfolioFragment_to_withdrawDialogFragment"
+            app:destination="@id/withdrawDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.ranking_list.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+
+    <dialog
+        android:id="@+id/investDialogFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.portfolio.InvestDialogFragment"
+        android:label="fragment_invest_dialog"
+        tools:layout="@layout/fragment_invest_dialog" />
+
+    <dialog
+        android:id="@+id/withdrawDialogFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.portfolio.WithdrawDialogFragment"
+        android:label="fragment_withdraw_dialog"
+        tools:layout="@layout/fragment_withdraw_dialog" />
+
+    <fragment
+        android:id="@+id/newAssetBuyValueFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.new_asset.NewAssetBuyValueFragment"
+        android:label="fragment_new_asset_value"
+        tools:layout="@layout/fragment_new_asset_buy_value">
+        <action
+            android:id="@+id/action_newAssetBuyValueFragment_to_newAssetSellValueFragment"
+            app:destination="@id/newAssetSellValueFragment" />
+        <action
+            android:id="@+id/action_newAssetBuyValueFragment_to_newAssetCoinFragment"
+            app:destination="@id/newAssetCoinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newAssetSellValueFragment"
+        android:name="com.rxs.cryptoportfolioapp.presentation.new_asset.NewAssetSellValueFragment"
+        android:label="fragment_new_asset_sell_value"
+        tools:layout="@layout/fragment_new_asset_sell_value">
+        <action
+            android:id="@+id/action_newAssetSellValueFragment_to_newAssetBuyValueFragment"
+            app:destination="@id/newAssetBuyValueFragment" />
+        <action
+            android:id="@+id/action_newAssetSellValueFragment_to_newAssetCoinFragment"
+            app:destination="@id/newAssetCoinFragment" />
+    </fragment>
+</navigation>

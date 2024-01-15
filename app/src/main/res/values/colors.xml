@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="background">#100118</color>
+    <color name="background_support">#161829</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white50">#BABABA</color>
+    <color name="white70">#6B6B6B</color>
+
+    <color name="purple_light">#CC7EFD</color>
+    <color name="purple">#814EBB</color>
+
+    <color name="red_light">#FFCACA</color>
+    <color name="red">#FF4040</color>
+    <color name="red_dark">#601818</color>
+
+    <color name="green_dark">#0F4A35</color>
+    <color name="green_light">#BADDD0</color>
+
+
+    <color name="spinner_ring_start">#33CC7EFD</color>
+    <color name="spinner_ring_center">#A771ED</color>
+    <color name="spinner_ring_end">#4D3C1C9B</color>
+</resources>

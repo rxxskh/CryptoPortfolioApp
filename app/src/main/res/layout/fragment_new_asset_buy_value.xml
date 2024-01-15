@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".presentation.new_asset.NewAssetBuyValueFragment">
+
+    <ImageView
+        android:id="@+id/iv_fragment_new_asset_buy_value_back"
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_arrow"
+        android:backgroundTint="@color/white"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/cl_fragment_new_asset_buy_value_coin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cl_fragment_new_asset_buy_value_coin" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_fragment_new_asset_buy_value_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_fragment_new_asset_buy_value_coin_symbol"
+            style="@style/Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="symbol"
+            android:textAllCaps="true"
+            android:textColor="@color/white50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_fragment_new_asset_buy_value_coin_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tv_fragment_new_asset_buy_value_coin_name"
+            style="@style/Title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_fragment_new_asset_buy_value_coin_symbol"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_fragment_new_asset_buy_value_sell"
+        style="@style/BaseButton"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Продать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_fragment_new_asset_buy_value_buy"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_new_asset_buy_value_balance" />
+
+    <Button
+        android:id="@+id/btn_fragment_new_asset_buy_value_buy"
+        style="@style/GreenLightButton"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Купить"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fragment_new_asset_buy_value_sell"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_new_asset_buy_value_balance" />
+
+    <TextView
+        android:id="@+id/tv_fragment_new_asset_buy_value_subtitle"
+        style="@style/Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Баланс"
+        android:textColor="@color/white50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_fragment_new_asset_buy_value_coin" />
+
+    <TextView
+        android:id="@+id/tv_fragment_new_asset_buy_value_balance"
+        style="@style/Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_new_asset_buy_value_subtitle" />
+
+    <Button
+        android:id="@+id/btn_fragment_new_asset_buy_value_add_trans"
+        style="@style/GreenLightButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Добавить транзакцию"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/background_support"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fragment_new_asset_buy_value_add_trans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fragment_new_asset_buy_value_buy"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/background_support"
+            android:paddingTop="32dp">
+
+            <TextView
+                android:id="@+id/tv_fragment_new_asset_buy_value_error"
+                style="@style/Caption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Все поля должны быть заполнены!"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_fragment_new_asset_buy_value_price_per_coin" />
+
+            <EditText
+                android:id="@+id/et_fragment_new_asset_buy_value_price_per_coin"
+                style="@style/CustomEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="number|numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fragment_new_asset_buy_value_subtitle2" />
+
+            <TextView
+                android:id="@+id/tv_fragment_new_asset_buy_value_subtitle2"
+                style="@style/Title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Цена за монету"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="@+id/et_fragment_new_asset_buy_value_price_per_coin"
+                app:layout_constraintTop_toBottomOf="@+id/et_fragment_new_asset_buy_value_count" />
+
+            <TextView
+                android:id="@+id/tv_fragment_new_asset_buy_value_caption1"
+                style="@style/Caption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="symbol"
+                android:textAlignment="textEnd"
+                android:textAllCaps="true"
+                android:textColor="@color/white50"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_fragment_new_asset_buy_value_subtitle1"
+                app:layout_constraintEnd_toEndOf="@+id/et_fragment_new_asset_buy_value_count"
+                app:layout_constraintTop_toTopOf="@+id/tv_fragment_new_asset_buy_value_subtitle1"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/et_fragment_new_asset_buy_value_count"
+                style="@style/CustomEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="number|numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fragment_new_asset_buy_value_subtitle1" />
+
+            <TextView
+                android:id="@+id/tv_fragment_new_asset_buy_value_caption2"
+                style="@style/Caption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USDT"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white50"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_fragment_new_asset_buy_value_subtitle2"
+                app:layout_constraintEnd_toEndOf="@+id/et_fragment_new_asset_buy_value_price_per_coin"
+                app:layout_constraintTop_toTopOf="@+id/tv_fragment_new_asset_buy_value_subtitle2" />
+
+            <TextView
+                android:id="@+id/tv_fragment_new_asset_buy_value_subtitle1"
+                style="@style/Title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="@+id/et_fragment_new_asset_buy_value_count"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
